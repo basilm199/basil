@@ -1,0 +1,5 @@
+region        = "eu-north-1"
+project_env   = "Production"
+project_name  = "Racing club"
+instance_type = "t3.micro"
+ami_id        = "ami-0416c18e75bd69567"
