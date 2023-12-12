@@ -38,6 +38,15 @@ resource "aws_security_group" "ssh2-http-https" {
   }
 
   ingress {
+    description = "Prometheus"
+    from_port   = 9090
+    to_port     = 9090
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+
+  ingress {
     description = "FTP Access"
     from_port   = 21
     to_port     = 21
